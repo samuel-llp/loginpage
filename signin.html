@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>qts - login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="title">
+    </div>
+    <form class="card" onsubmit="handleOnSubmit(event)">
+        <p>LOGIN</p>
+        <div class="input-wrapper">
+            <span>
+                <i class="ph-bold ph-envelope-simple"></i>
+                E-mail
+            </span>
+            <input id="form" type="email" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="input-wrapper">
+            <span>
+                <i class="ph-bold ph-key"></i>
+                Senha
+            </span>
+            <input id="form" type="password" placeholder="Digite sua senha">
+        </div>
+
+        <button type="submit">
+            Entrar
+            <i class="ph-bold ph-sign-in"></i>
+        </button>
+
+        <a href="signup.html">Não possui uma conta? Registre-se</a>
+    </form>
+</body>
+</html>
