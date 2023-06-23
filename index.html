@@ -8,21 +8,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>qts - login</title>
+    <title>Register Page</title>
 
-    <link rel="stylesheet" href="style.css">
     <script src="signup.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="card" onsubmit="handleCadastroSubmit(event)" id="form">
+    <form class="card" onsubmit="formEvent(event)" id="form">
         <p>REGISTRE-SE</p>
         <div class="input-wrapper">
             <span>
                 <i class="ph-bold ph-user"></i>
                 Nome completo
             </span>
-            <input id="nome" type="text" placeholder="Digite seu nome de usuário">
+            <input id="name" type="text" placeholder="Digite seu nome de usuário">
         </div>
 
         <div class="input-wrapper">
@@ -38,7 +38,7 @@
                 <i class="ph-bold ph-key"></i>
                 Senha
             </span>
-            <input id="senha" type="password" placeholder="Digite uma senha">
+            <input id="password" type="password" placeholder="Digite uma senha">
         </div>
 
         <button type="submit">

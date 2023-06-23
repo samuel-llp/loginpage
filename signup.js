@@ -1,19 +1,22 @@
-function handleCadastroSubmit(event) {
-    event.preventDefault(); 
-  
-    var nome = document.getElementById('nome').value;
-    var email = document.getElementById('email').value;
-    var senha = document.getElementById('senha').value;
-  
-    var usuario = {
-      nome: nome,
-      email: email,
-      senha: senha
-    };
-  
-    localStorage.setItem('usuario', JSON.stringify(usuario));
-  
-    alert('Cadastro realizado com sucesso!');
-  }
-  
-  
+function formEvent(e) { 
+  e.preventDefault();
+
+  const alertMessage = handleSignupSubmit(
+    document.getElementById('name').value,
+    document.getElementById('email').value,
+    document.getElementById('password').value
+  )
+  return alert(alertMessage)
+}
+
+function handleSignupSubmit(name, email, password) {
+  let user = {
+    name,
+    email,
+    password
+  };
+
+  localStorage.setItem('user', JSON.stringify(user));
+
+  return 'Cadastro realizado com sucesso!'
+}
