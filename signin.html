@@ -8,29 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>qts - login</title>
+    <title>Login Page - QTS</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="login.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <form class="card" onsubmit="handleOnSubmit(event)">
-        <p>REGISTRE-SE</p>
-        <div class="input-wrapper">
-            <span>
-                <i class="ph-bold ph-user"></i>
-                Nome completo
-            </span>
-            <input id="form" type="text" placeholder="Digite seu nome de usuário">
-        </div>
-
+    <div class="title">
+    </div>
+    <form class="card" onsubmit="handleOnSubmit(event)" id="form">
+        <p>LOGIN</p>
         <div class="input-wrapper">
             <span>
                 <i class="ph-bold ph-envelope-simple"></i>
                 E-mail
             </span>
-            <input id="form" type="email" placeholder="Digite seu e-mail">
+            <input id="email" type="email" placeholder="Digite seu e-mail" autocomplete="off">
         </div>
 
         <div class="input-wrapper">
@@ -38,15 +32,15 @@
                 <i class="ph-bold ph-key"></i>
                 Senha
             </span>
-            <input id="form" type="password" placeholder="Digite uma senha">
+            <input id="senha" type="password" placeholder="Digite sua senha">
         </div>
 
-        <button type="submit">
-            Registrar
-            <i class="ph-bold ph-user-plus"></i>
+        <button id="button" onclick="checkLogin()" type="submit">
+            Entrar
+            <i class="ph-bold ph-sign-in"></i>
         </button>
 
-        <a href="index.html">Já possui uma conta? Faça o login</a>
+        <a href="signup.html">Não possui uma conta? Registre-se</a>
     </form>
 </body>
 </html>
